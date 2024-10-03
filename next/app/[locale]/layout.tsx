@@ -10,6 +10,7 @@ import { CartProvider } from '@/context/cart-context';
 import { cn } from '@/lib/utils';
 import { ViewTransitions } from 'next-view-transitions';
 import fetchContentType from '@/lib/strapi/fetchContentType';
+import { EventHandler } from '@/components/event';
 
 const inter = Inter({
     subsets: ["latin"],
@@ -53,6 +54,7 @@ export default async function LocaleLayout({
                             "bg-charcoal antialiased h-full w-full"
                         )}
                     >
+                        <EventHandler />
                         <Navbar data={pageData.navbar} locale={locale} />
                         {children}
                         <Footer data={pageData.footer} locale={locale} />
