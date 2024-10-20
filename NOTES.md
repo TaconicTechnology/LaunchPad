@@ -4,5 +4,5 @@
 `cd strapi`
 `npm run strapi develop`
 
-email: "kevin@folinus.com",
-password: "welcomeToStrapi123",
+email: "k**********m",
+password: "we**********123",
